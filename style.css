@@ -1,0 +1,85 @@
+/*
+  Hello kids! This file styles the website.
+  CSS tells the browser what colors, fonts, and sizes to use.
+*/
+
+/* These colors feel calm and sloth-friendly. */
+:root {
+  --sloth-brown: #7b5d4a;
+  --leaf-green: #8fbf7d;
+  --sky-cream: #fff6e6;
+  --cozy-gray: #f2eee9;
+}
+
+/* This keeps the page neat and centered. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+  background-color: var(--sky-cream);
+  color: var(--sloth-brown);
+  line-height: 1.6;
+}
+
+/* The hero area is the big top section. */
+.hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, var(--leaf-green), var(--sky-cream));
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.sloth-image-placeholder {
+  margin: 1.5rem auto 0;
+  width: min(300px, 80%);
+  padding: 2rem;
+  border: 3px dashed var(--sloth-brown);
+  border-radius: 16px;
+  background-color: var(--cozy-gray);
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.activities ul {
+  list-style: "🦥 ";
+  padding-left: 1.5rem;
+}
+
+button {
+  background-color: var(--sloth-brown);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5f4536;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--cozy-gray);
+}
